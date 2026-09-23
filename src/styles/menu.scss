@@ -1,0 +1,62 @@
+.menu {
+  background-color: #e5e6e8;
+  box-sizing: border-box;
+  height: $header-height-mobile;
+  padding: $mobile-default-padding;
+  padding-inline: $mobile-inline-padding;
+
+  @include on-tablet-header-height;
+  @include on-computer-header-height;
+
+  @include at-tablet {
+    padding: $tablet-default-padding;
+    padding-inline: $tablet-inline-padding;
+  }
+
+  @include at-computer {
+    padding: $computer-default-padding;
+    padding-inline: $computer-inline-padding;
+  }
+
+  &__icon--close {
+    height: $mobile-icon-height;
+    width: $mobile-icon-width;
+    background-image: url(../images/icons/close-icon.png);
+    background-size: cover;
+    background-position: center;
+
+    @include at-tablet {
+      background-image: url(../images/icons/close-icon-tablet.png);
+    }
+
+    @include on-tablet-icon-sizing;
+    @include on-computer-icon-sizing;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__phone-number {
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 140%;
+  }
+
+  &__order-call {
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 140%;
+    width: fit-content;
+
+    margin-bottom: 7px;
+    border-bottom: 1px solid #292929;
+  }
+}
