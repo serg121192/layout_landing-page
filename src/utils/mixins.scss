@@ -25,18 +25,6 @@
 }
 
 // -- Shared across header.scss and menu.scss -- //
-@mixin on-tablet-header-height {
-  @include at-tablet {
-    height: $header-height-tablet;
-  }
-}
-
-@mixin on-computer-header-height {
-  @include at-computer {
-    height: $header-height-computer;
-  }
-}
-
 @mixin on-tablet-icon-sizing {
   @include at-tablet {
     height: $tablet-icon-height;
@@ -68,14 +56,14 @@
 @mixin on-tablet-cards-image-size {
   @include at-tablet {
     height: $card-img-height-tablet;
-    width: $card-img-width-tablet;
+    width: 100%;
   }
 }
 
 @mixin on-computer-cards-image-size {
   @include at-computer {
     height: $card-img-height-computer;
-    width: $card-img-width-computer;
+    width: 100%;
   }
 }
 

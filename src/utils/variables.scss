@@ -29,7 +29,6 @@ $mobile-store-image-height: 130px;
 $mobile-column-template: repeat(2, minmax($grid-column-width, 1fr));
 $grid-columns-mobile: string.unquote('1 / -1');
 $card-img-height-mobile: 280px;
-$card-img-width-mobile: 280px;
 $mobile-inline-padding: 20px;
 $mobile-default-padding: 24px 0 40px;
 $mobile-icon-height: 24px;
@@ -50,7 +49,6 @@ $tablet-icon-height: 32px;
 $tablet-icon-width: 32px;
 $tablet-recommended-cards-paddings: 120px 72px;
 $card-img-height-tablet: 600px;
-$card-img-width-tablet: 600px;
 $tablet-brand-image-height: 400px;
 
 // -- Computer screen (min-width: 1260px) settings -- //
@@ -67,5 +65,4 @@ $computer-icon-width: 32px;
 $grid-columns-computer: span 4;
 $computer-recommended-cards-paddings: 120px 120px 128px;
 $card-img-height-computer: 324px;
-$card-img-width-computer: 324px;
 $computer-brand-image-height: 460px;

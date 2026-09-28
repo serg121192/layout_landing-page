@@ -1,6 +1,7 @@
 .header {
   background-size: cover;
-  height: $header-height-mobile;
+  min-height: $header-height-mobile;
+  height: 100vh;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,9 +13,6 @@
   box-sizing: border-box;
   flex-direction: column;
   justify-content: space-between;
-
-  @include on-tablet-header-height;
-  @include on-computer-header-height;
 
   @include at-tablet {
     background-image: url('../images/header-bg-tablet.png');

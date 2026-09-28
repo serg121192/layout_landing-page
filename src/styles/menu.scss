@@ -1,12 +1,10 @@
 .menu {
   background-color: #e5e6e8;
   box-sizing: border-box;
-  height: $header-height-mobile;
+  height: 100vh;
+  overflow-y: auto;
   padding: $mobile-default-padding;
   padding-inline: $mobile-inline-padding;
-
-  @include on-tablet-header-height;
-  @include on-computer-header-height;
 
   @include at-tablet {
     padding: $tablet-default-padding;
