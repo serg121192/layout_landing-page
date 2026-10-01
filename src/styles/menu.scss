@@ -1,5 +1,5 @@
 .menu {
-  background-color: #e5e6e8;
+  background-color: $overlay-background-color;
   box-sizing: border-box;
   height: 100vh;
   overflow-y: auto;
@@ -22,6 +22,7 @@
     background-image: url(../images/icons/close-icon.png);
     background-size: cover;
     background-position: center;
+    transition: transform .3s ease;
 
     @include at-tablet {
       background-image: url(../images/icons/close-icon-tablet.png);
@@ -31,9 +32,14 @@
     @include on-computer-icon-sizing;
   }
 
+  &__icon--close:hover {
+    transform: scale(1.2);
+  }
+
   &__contacts {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 16px;
   }
 
@@ -43,6 +49,8 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 140%;
+    transform-origin: left;
+    transition: transform .3s ease-out;
   }
 
   &__order-call {
@@ -52,9 +60,14 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 140%;
-    width: fit-content;
-
     margin-bottom: 7px;
-    border-bottom: 1px solid #292929;
+    border-bottom: 1px solid $main-text-color;
+    transform-origin: left;
+    transition: transform .3s ease-out;
+  }
+
+  &__phone-number:hover,
+  &__order-call:hover {
+    transform: scale(1.1);
   }
 }

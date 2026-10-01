@@ -5,6 +5,7 @@ $main-buttons-color: #292929;
 $main-buttons-hover-color: #f8f8fa;
 $default-buttons-text-color: #fff;
 $form-field-bg-color: #f8f8fa;
+$overlay-background-color: #e5e6e8;
 $main-buttons-hover-border: 2px solid #f0f1f4;
 $contact-label-color: #9393a3;
 
@@ -35,6 +36,8 @@ $mobile-icon-height: 24px;
 $mobile-icon-width: 24px;
 $mobile-recommended-cards-paddings: 64px 20px 96px;
 $mobile-brand-image-height: 200px;
+$login-mobile-title-fz: 24px;
+$welcome-msg-mobile-fz: 14px;
 
 // -- Tablet screen (min-width: 744px) settings -- //
 $tablet-section-title-font-size: 40px;
@@ -50,6 +53,8 @@ $tablet-icon-width: 32px;
 $tablet-recommended-cards-paddings: 120px 72px;
 $card-img-height-tablet: 600px;
 $tablet-brand-image-height: 400px;
+$login-tablet-title-fz: 36px;
+$welcome-msg-tablet-fz: 18px;
 
 // -- Computer screen (min-width: 1260px) settings -- //
 $computer-section-title-font-size: 48px;
@@ -66,3 +71,5 @@ $grid-columns-computer: span 4;
 $computer-recommended-cards-paddings: 120px 120px 128px;
 $card-img-height-computer: 324px;
 $computer-brand-image-height: 460px;
+$login-computer-title-fz: 48px;
+$welcome-msg-computer-fz: 24px;

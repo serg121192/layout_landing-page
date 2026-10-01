@@ -88,6 +88,17 @@
       visibility: hidden;
     }
 
+    input[type="text"],
+    input[type="email"] {
+      &:autofill,
+      &:-webkit-autofill,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        box-shadow: inset 0 0 0 1000px $form-field-bg-color;
+        -webkit-text-fill-color: inherit;
+      }
+    }
+
     input[type='submit'] {
       height: 56px;
       background-color: $main-buttons-color;
@@ -143,6 +154,17 @@
         text-decoration: none;
         color: $main-text-color;
         margin: 0;
+      }
+
+      & a {
+        display: inline-block;
+        transform-origin: left;
+        transition: all .3s ease-in;
+      }
+
+      & a:hover {
+        transform: scale(1.2);
+        font-weight: 700;
       }
     }
   }

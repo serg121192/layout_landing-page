@@ -35,10 +35,19 @@
     display: grid;
     grid-column: $grid-columns-mobile;
     place-items: start start;
+    transition: all .3s ease-in-out;
 
     @include at-computer {
       grid-column: $grid-columns-computer;
     }
+  }
+
+  .card__phone:has(.card__phone-img:hover),
+  .card__ear-2:has(.card__ear-2-img:hover),
+  .card__ear:has(.card__ear-img:hover) {
+    transform: scale(1.05);
+    border-bottom: 4px solid $main-text-color;
+    border-radius: 2px;
   }
 
   .card__phone-img,

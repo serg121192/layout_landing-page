@@ -111,6 +111,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    transition: transform .3s ease;
   }
 
   .product-1--img {
@@ -185,6 +187,15 @@
     }
   }
 
+  .product-1--img:hover,
+  .product-2--img:hover,
+  .audio-1--img:hover,
+  .audio-2--img:hover,
+  .accessory-1--img:hover,
+  .accessory-2--img:hover {
+    transform: scale(1.05);
+  }
+
   .btn__view-all {
     display: grid;
     margin: 0;
@@ -195,8 +206,6 @@
     border: 0;
     border-radius: 8px;
     background-color: $main-buttons-color;
-    color: #fff;
-    line-height: 27px;
     transition: background-color 0.3s ease;
 
     @include at-computer {
@@ -206,12 +215,24 @@
     &:hover {
       background-color: $main-buttons-hover-color;
       border: $main-buttons-hover-border;
-      color: $main-text-color;
     }
 
     &:active {
-      color: #fff;
       background-color: #111;
+    }
+
+    & a {
+      text-decoration: none;
+      color: #fff;
+      line-height: 27px;
+    }
+
+    &:hover a {
+      color: $main-text-color;
+    }
+
+    &:active a {
+      color: #fff;
     }
   }
 }

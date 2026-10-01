@@ -12,6 +12,11 @@
     />
     <title>NOTHING</title>
     <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/icons/nothing-favicon.jpg"
+    >
+    <link
       rel="preconnect"
       href="https://fonts.googleapis.com"
     />
@@ -142,6 +147,91 @@
     </aside>
     <!-- #endregion MENU -->
 
+    <!-- #region CART -->
+    <aside
+      class="cart page__cart"
+      id="cart"
+      aria-labelledby="cart-title"
+    >
+      <div class="top-bar">
+        <a
+          href="#"
+          class="top-bar__logo"
+        ></a>
+
+        <a
+          href="#"
+          class="icon cart__icon--close"
+          aria-label="Close cart"
+        ></a>
+      </div>
+
+      <div class="cart__content">
+        <h2
+          class="title cart__title"
+          id="cart-title"
+        >
+          Your bag
+        </h2>
+        <p class="cart__empty">Your bag is empty.</p>
+        <a
+          class="cart__button"
+          href="#recomended"
+        >
+          Browse products
+        </a>
+      </div>
+    </aside>
+    <!-- #endregion CART -->
+
+    <!-- #region LOGIN -->
+    <aside
+      class="login page__login"
+      id="login"
+    >
+      <div class="top-bar">
+        <a
+          href="#"
+          class="top-bar__logo"
+        ></a>
+
+        <a
+          href="#"
+          class="icon login__icon--close"
+        ></a>
+      </div>
+
+      <div class="login__container">
+        <h2 class="login__title">Welcome to NOTHING!</h2>
+        <p class="welcome__msg">Sign in to your NOTHING account.</p>
+        <form
+          action="#"
+          class="login__form"
+        >
+          <div class="login__email">
+            <span class="login__label">Email</span>
+            <input type="text" placeholder="Enter email">
+          </div>
+          <div class="login__password">
+            <span class="login__label">Password</span>
+            <input type="password" placeholder="Enter password">
+          </div>
+          <a href="#" class="change__password">Forgot password?</a>
+          <input
+            class="login__button"
+            type="submit"
+            value="Login"
+          >
+        </form>
+        <p class="create__account">New to NOTHING?
+          <a href="#">Create an account</a>
+        </p>
+      </div>
+
+      <p class="demo__message">DEMO LOGIN FORM. NOT REAL AUTHENTICATION.</p>
+    </aside>
+    <!-- #endregion -->
+
     <main class="main">
       <!-- #region RECOMMENDED -->
       <section
@@ -212,7 +302,9 @@
           </div>
         </div>
 
-        <button class="btn__view-all">View all</button>
+        <button class="btn__view-all">
+          <a href="#store">View all</a>
+        </button>
       </section>
       <!-- #endregion -->
 
@@ -245,6 +337,9 @@
         <h2 class="title contacts__title">Contact us</h2>
 
         <form
+          action="#"
+          method="post"
+          type="submit"
           class="contacts__form"
           onsubmit="return false;"
         >
