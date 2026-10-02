@@ -43,7 +43,7 @@
       box-sizing: border-box;
       height: 48px;
       grid-column: 1 / -1;
-      border-style: none;
+      border: 0 solid transparent;
       border-radius: 8px;
       background-color: $form-field-bg-color;
       padding: 14px 16px;
@@ -69,8 +69,7 @@
 
     input:hover,
     textarea:hover {
-      border: $main-buttons-hover-border;
-      border-width: 1px;
+      border: 1px solid #D5D7DE;
     }
 
     input:hover::placeholder,
@@ -114,6 +113,7 @@
       background-color: $main-buttons-hover-color;
       color: $main-text-color;
       border: $main-buttons-hover-border;
+      cursor: pointer;
     }
 
     input[type='submit']:active {

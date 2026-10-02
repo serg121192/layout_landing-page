@@ -126,7 +126,7 @@
 
     input[type='email']:hover,
     input[type='password']:hover {
-      border-color: #f0f1f4;
+      border-color: #D5D7DE;
     }
 
     input::placeholder {
@@ -137,10 +137,10 @@
       color: $main-text-color;
     }
 
-    input[type='email']:focus,
-    input[type='password']:focus {
-      border-color: #292929;
-    }
+    // input[type='email']:focus,
+    // input[type='password']:focus {
+    //   border-color: #292929;
+    // }
 
     input[type='email']:focus::placeholder,
     input[type='password']:focus::placeholder {
@@ -180,6 +180,7 @@
       background-color: $main-buttons-hover-color;
       color: $main-text-color;
       border: 1px solid #f0f1f4;
+      cursor: pointer;
     }
 
     .login__button:active {
@@ -190,8 +191,7 @@
 
     input:focus-visible,
     a:focus-visible {
-      outline: 2px solid $main-text-color;
-      outline-offset: 3px;
+      outline: 1px solid $main-text-color;
     }
   }
 
