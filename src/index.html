@@ -207,10 +207,11 @@
         <form
           action="#"
           class="login__form"
+          onsubmit="this.reset(); return false;"
         >
           <div class="login__email">
             <span class="login__label">Email</span>
-            <input type="text" placeholder="Enter email">
+            <input type="email" placeholder="Enter email">
           </div>
           <div class="login__password">
             <span class="login__label">Password</span>
@@ -242,7 +243,7 @@
 
         <div class="recomended__cards">
           <div class="card__phone">
-            <div class="card__phone-img"></div>
+            <a href="#" class="card__phone-img"></a>
             <h3 class="card__phone-title">Phone (1)</h3>
             <div class="card__phone-text">
               Designed with instinct, to bring joy back to the everyday. Through
@@ -253,7 +254,7 @@
           </div>
 
           <div class="card__ear-2">
-            <div class="card__ear-2-img"></div>
+            <a href="#" class="card__ear-2-img"></a>
             <h3 class="card__ear-2-title">Ear-2</h3>
             <div class="card__ear-2-text">
               Perfecting the path from artist to ear. So that music sounds just
@@ -263,7 +264,7 @@
           </div>
 
           <div class="card__ear">
-            <div class="card__ear-img"></div>
+            <a class="card__ear-img"></a>
             <h3 class="card__ear-title">Ear (stick)</h3>
             <div class="card__ear-text">
               Tech you can’t feel. Leaving just space for sound to come to life.
@@ -284,20 +285,20 @@
 
         <div class="store__categories">
           <div class="category__products">
-            <div class="category__image product-1--img"></div>
-            <div class="category__image product-2--img"></div>
+            <a href="#" class="category__image product-1--img"></a>
+            <a href="#" class="category__image product-2--img"></a>
             <h2 class="category__title">All products</h2>
           </div>
 
           <div class="category__audio">
-            <div class="category__image audio-1--img"></div>
-            <div class="category__image audio-2--img"></div>
+            <a href="#" class="category__image audio-1--img"></a>
+            <a href="#" class="category__image audio-2--img"></a>
             <h2 class="category__title">Audio</h2>
           </div>
 
           <div class="category__accessories">
-            <div class="category__image accessory-1--img"></div>
-            <div class="category__image accessory-2--img"></div>
+            <a href="#" class="category__image accessory-1--img"></a>
+            <a href="#" class="category__image accessory-2--img"></a>
             <h2 class="category__title">Accessories</h2>
           </div>
         </div>
@@ -341,7 +342,7 @@
           method="post"
           type="submit"
           class="contacts__form"
-          onsubmit="return false;"
+          onsubmit="this.reset(); return false;"
         >
           <input
             type="text"
@@ -394,13 +395,17 @@
           <div class="contacts__detail">
             <span class="contacts__label">Address</span>
 
-            <p class="contacts__value">
+            <a
+              href="https://maps.google.com/?q=00+first+ave.+suite+700+minneapolis,+mn+55401"
+              target="_blank"
+              class="contacts__value"
+            >
               00 first ave.
               <br />
               suite 700
               <br />
               Minneapolis, MN 55401
-            </p>
+            </a>
           </div>
         </div>
       </section>
