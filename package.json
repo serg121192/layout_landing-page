@@ -2,7 +2,7 @@
   "name": "layout_landing-page",
   "version": "1.0.0",
   "description": "Landing page",
-  "homepage": "http://layout_landing-page",
+  "homepage": "https://serg121192.github.io/layout_landing-page/",
   "scripts": {
     "init": "mate-scripts init",
     "start": "vite --host 0.0.0.0",
@@ -11,7 +11,7 @@
     "lint": "npm run style-format && npm run format && mate-scripts lint",
     "test:only": "mate-scripts test",
     "build": "vite build",
-    "deploy": "mate-scripts deploy",
+    "deploy": "npm run build && mate-scripts deploy",
     "update": "mate-scripts update",
     "postinstall": "npm run update",
     "test": "npm run lint && npm run test:only"
